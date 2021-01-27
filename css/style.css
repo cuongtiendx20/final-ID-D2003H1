@@ -1,0 +1,197 @@
+/* CSS Document */
+@font-face{
+	src:url(../fonts/Voyage-Regular.otf),url(../fonts/Voyage-Bold.otf);
+	font-family: Voyage
+}
+@font-face{
+	src: url(../fonts/Kobe.otf);
+	font-family: Kobe
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Voyage;
+	background: #f3eee8;
+}
+#wrapper{
+	width: 100%;
+}
+header{
+	width: 100%;
+	height: 176px;
+	padding: 32px;
+/*	background: #EB2B2E;*/
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 1000;
+}
+.logo{
+	width: 20%;
+	height: 112px;
+/*	background: #1BB575;*/
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.logo a{
+	text-decoration: none;
+	font-size: 43px;
+	color: black;
+	float: left;
+	line-height: 30px;
+}
+.menu{
+	width: 60%;
+	height: 112px;
+/*	background: blue;*/
+	float: left;
+}
+.menu ul{
+	list-style: none;
+	text-align: center;
+}
+.menu ul li{
+	display: inline-block;
+	margin-right: 30px;
+	line-height: 100px;
+	transition-duration: 0.2s;
+}
+.menu ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 50px;
+	
+}
+.menu ul li:hover{
+	transform: rotate(-5deg) scale(1.1);
+	
+}
+.icon{
+	width: 20%;
+	height: 112px;
+/*	background: #1BB575;*/
+	float: left;
+	text-align: right;
+}
+.icon img{
+	width: 40px;
+	margin-top: 35px;
+	transition-duration: 0.5s;
+}
+.icon img:hover{
+	transform: rotate(90deg)
+}
+.welcome{
+	width: 100%;
+	height: 1300px;
+/*	background: #B56D6E;*/
+	text-align: center;
+	padding-top:200px;
+/*	box-sizing: border-box;*/
+}
+.welcome .content{
+/*	background: blue;*/
+	width: 1200px;
+	height: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.welcome h2{
+	font-size: 150px;
+	font-weight: lighter;
+	line-height: 120px;
+	position: relative;
+	z-index: 2
+}
+.of-custom{
+	position: relative;
+	left: -220px;
+	top:25px;
+	z-index: 2;
+}
+.welcome p{
+	font-family: kobe;
+	position: absolute;
+	right: 15%;
+    top: 322px;
+	font-size: 20px;
+	z-index: 2;
+}
+.welcome h3{
+	font-family: kobe;
+	font-size: 100px;
+	font-weight: lighter;
+	margin-top: 100px;
+	position: relative;
+	z-index: 6;
+}
+.welcome h1{
+	font-size: 800px;
+	font-weight: lighter;
+	position: absolute;
+	top:150px;
+/*	background: blue;*/
+	color: #f8c1ca;
+	z-index: 1;
+}
+.sub-icon .smile{
+	width: 120px;
+	position: absolute;
+	z-index: 10;
+	top:100px;
+	right:140px;
+	animation-name: xoay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes xoay{
+	0%{
+		transform: rotate(-40deg)
+	}
+
+	50%{
+		transform: rotate(40deg)
+	}
+
+	100%{
+		transform: rotate(-40deg)
+	}
+}
+.sub-icon .arrow-top{
+	width: 60px;
+	position: absolute;
+	z-index: 10;
+	top:200px;
+	left: 650px;
+}
+.sub-icon .circle{
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top:250px;
+	left: 270px;
+}
+.sub-icon .ngoac-left{
+	font-family: kobe;
+	font-size: 100px;
+/*	font-weight: lighter;*/
+	color: gray;
+	position: absolute;
+	top:280px;
+	left: 560px;
+}
+.sub-icon .ngoac-right{
+	font-family: kobe;
+	font-size: 100px;
+/*	font-weight: bold;*/
+	color: gray;
+	position: absolute;
+	top:280px;
+	right: 100px;
+}
